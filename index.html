@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+  </div>
+
+  <div class="container">
+   
+    <div class="left-section">
+      <img src="lubo.jpg" alt="Profile Photo" />
+    </div>
+
+  
+    <div class="center-section">
+      <h1>MY PORTFOLIO</h1>
+      <div class="about-box">
+        <p>
+          Hello! My name is Amar Lubo. I’m a third-year BSINT student at
+          Negros Oriental State University. I am hardworking and willing
+          to learn about programming.
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="right-section" id="navbar">
+      <button>HOME</button>
+      <button>ABOUT</button>
+      <button>CONTACT US</button>
+    </div>
+
+   
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navbar = document.getElementById("navbar");
+
+    hamburger.addEventListener("click", () => {
+      navbar.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
